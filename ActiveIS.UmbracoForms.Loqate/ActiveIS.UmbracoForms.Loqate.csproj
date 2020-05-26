@@ -167,6 +167,13 @@
   <ItemGroup>
     <None Include="app.config" />
     <None Include="packages.config" />
+    <None Include="Views\Partials\Forms\Fieldtypes\FieldType.Loqate.cshtml" />
+    <None Include="Views\Partials\Forms\Themes\default\Fieldtypes\FieldType.Loqate.cshtml" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="App_Plugins\UmbracoForms\Backoffice\Common\FieldTypes\loqate.html" />
+    <Content Include="App_Plugins\UmbracoForms\Images\loqate.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\Umbraco.SqlServerCE.4.0.0.1\build\Umbraco.SqlServerCE.targets" Condition="Exists('..\packages\Umbraco.SqlServerCE.4.0.0.1\build\Umbraco.SqlServerCE.targets')" />
