@@ -550,6 +550,12 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ActiveIS.UmbracoForms.Loqate\ActiveIS.UmbracoForms.Loqate.csproj">
+      <Project>{bbb0f9b2-151e-4556-8135-c06ad6f82e8d}</Project>
+      <Name>ActiveIS.UmbracoForms.Loqate</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
