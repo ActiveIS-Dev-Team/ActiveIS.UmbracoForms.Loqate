@@ -338,6 +338,7 @@
     <Content Include="App_Plugins\UmbracoForms\Backoffice\Common\FieldTypes\dropdownlist.html" />
     <Content Include="App_Plugins\UmbracoForms\Backoffice\Common\FieldTypes\fileupload.html" />
     <Content Include="App_Plugins\UmbracoForms\Backoffice\Common\FieldTypes\hiddenfield.html" />
+    <Content Include="App_Plugins\UmbracoForms\Backoffice\Common\FieldTypes\loqate.html" />
     <Content Include="App_Plugins\UmbracoForms\Backoffice\Common\FieldTypes\password.html" />
     <Content Include="App_Plugins\UmbracoForms\Backoffice\Common\FieldTypes\radiobuttonlist.html" />
     <Content Include="App_Plugins\UmbracoForms\Backoffice\Common\FieldTypes\recaptcha.html" />
@@ -410,6 +411,7 @@
     <Content Include="App_Plugins\UmbracoForms\Directives\umb-forms-render-type.html" />
     <Content Include="App_Plugins\UmbracoForms\Fonts\icomoon.svg" />
     <Content Include="App_Plugins\UmbracoForms\Images\close.png" />
+    <Content Include="App_Plugins\UmbracoForms\Images\loqate.png" />
     <Content Include="App_Plugins\UmbracoForms\Images\recaptcha.png" />
     <Content Include="App_Plugins\UmbracoForms\Images\recaptcha2.png" />
     <Content Include="App_Plugins\UmbracoForms\Images\succes-green.png" />
@@ -543,6 +545,8 @@
     <Content Include="Views\MacroPartials\LatestBlogposts.cshtml" />
     <Content Include="Views\MacroPartials\RenderUmbracoFormScripts.cshtml" />
     <Content Include="Views\MacroPartials\InsertUmbracoFormWithTheme.cshtml" />
+    <Content Include="Views\Partials\Forms\Fieldtypes\FieldType.Loqate.cshtml" />
+    <Content Include="Views\Partials\Forms\Themes\default\Fieldtypes\FieldType.Loqate.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
