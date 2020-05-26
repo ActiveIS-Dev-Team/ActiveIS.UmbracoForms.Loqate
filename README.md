@@ -15,8 +15,6 @@ You can find a downloadable package on the [Our Umbraco](https://our.umbraco.com
 
 ## Usage
 
-**Pre-Release**
-
 This package adds Loqate address verification to Umbraco Forms.
 
 This is tested with **Umbraco V8.6.1** and **Umbraco Forms 8.4.1**
