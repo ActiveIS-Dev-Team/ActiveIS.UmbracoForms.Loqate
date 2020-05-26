@@ -6,9 +6,9 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("ActiveIS.UmbracoForms.Loqate")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("A loqate address verification plugin for Umbraco Forms")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("ActiveIS")]
 [assembly: AssemblyProduct("ActiveIS.UmbracoForms.Loqate")]
 [assembly: AssemblyCopyright("Copyright ©  2020")]
 [assembly: AssemblyTrademark("")]
