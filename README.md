@@ -8,10 +8,10 @@ This package is supported on Umbraco 8.6+ and Umbraco Forms 8.4.1+.
 
 ### Installation
 
-ActiveIS.UmbracoForms.Loqate is available from [Our Umbraco](#), [NuGet](#) or as a manual download directly from GitHub.
+ActiveIS.UmbracoForms.Loqate is available from [Our Umbraco](https://our.umbraco.com/packages/website-utilities/activeisumbracoformsloqate/), [NuGet](https://www.nuget.org/packages/ActiveIS.UmbracoForms.Loqate/) or as a manual download directly from GitHub.
 
 #### Our Umbraco repository
-You can find a downloadable package on the [Our Umbraco](#) site.
+You can find a downloadable package on the [Our Umbraco](https://our.umbraco.com/packages/website-utilities/activeisumbracoformsloqate/) site.
 
 ## Usage
 
