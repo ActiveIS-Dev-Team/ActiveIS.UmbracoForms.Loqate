@@ -1,18 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <package >
   <metadata>
-    <id>$id$</id>
-    <version>$version$</version>
-    <title>$title$</title>
-    <authors>$author$</authors>
-    <owners>$author$</owners>
-    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <id>ActiveIS.UmbracoForms.Loqate</id>
+    <version>1.0.0</version>
+    <title>ActiveIS.UmbracoForms.Loqate</title>
+    <authors>ActiveIS</authors>
+    <owners>ActiveIS</owners>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <license type="expression">MIT</license>
-    <projectUrl>http://project_url_here_or_delete_this_line/</projectUrl>
-    <iconUrl>http://icon_url_here_or_delete_this_line/</iconUrl>
-    <description>$description$</description>
-    <releaseNotes>Summary of changes made in this release of the package.</releaseNotes>
+    <projectUrl>https://github.com/ActiveIS/ActiveIS.UmbracoForms.Loqate</projectUrl>
+    <icon>loqate.png</icon>
+    <description>A loqate address verification plugin for Umbraco Forms</description>
+    <releaseNotes>Initial Release</releaseNotes>
     <copyright>Copyright 2020</copyright>
-    <tags>Tag1 Tag2</tags>
+    <tags>umbraco umbraco-cms umbraco-forms loqate</tags>
+	<dependencies>
+	  <group targetFramework=".NETFramework4.7.2">
+		  <dependency id="UmbracoForms" version="8.4.1" />
+		  <dependency id="UmbracoForms.Core" version="8.4.1" />
+		  <dependency id="UmbracoCms" version="8.6.1" />
+	  </group>
+    </dependencies>
   </metadata>
+    <files>
+      <file src="..\..\ActiveIS.UmbracoForms.Loqate\App_Plugins\UmbracoForms\Images\loqate.png"/>
+	  <file src="..\..\ActiveIS.UmbracoForms.Loqate\bin\Release\ActiveIS.UmbracoForms.Loqate.dll" target="lib\net472" />
+	  <file src="..\..\ActiveIS.UmbracoForms.Loqate\Views\Partials\Forms\Fieldtypes\FieldType.Loqate.cshtml" target="content\Views\Partials\Forms\Fieldtypes\" />
+	  <file src="..\..\ActiveIS.UmbracoForms.Loqate\Views\Partials\Forms\Themes\default\Fieldtypes\FieldType.Loqate.cshtml" target="content\Views\Partials\Forms\Themes\default\Fieldtypes\" />
+	  <file src="..\..\ActiveIS.UmbracoForms.Loqate\App_Plugins\UmbracoForms\Backoffice\Common\FieldTypes\loqate.html" target="content\App_Plugins\UmbracoForms\Backoffice\Common\FieldTypes\" />
+    </files>
 </package>
