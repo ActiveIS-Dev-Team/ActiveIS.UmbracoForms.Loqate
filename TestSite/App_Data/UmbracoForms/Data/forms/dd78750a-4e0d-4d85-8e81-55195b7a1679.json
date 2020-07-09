@@ -1,0 +1,226 @@
+{
+  "name": "Test Form",
+  "created": "2020-05-20T12:38:32.235769+01:00",
+  "pages": [
+    {
+      "fieldSets": [
+        {
+          "caption": "Your Address",
+          "sortOrder": 0,
+          "id": "aa263f24-d393-4bef-a7e7-2f42b7b82e37",
+          "page": "00000000-0000-0000-0000-000000000000",
+          "containers": [
+            {
+              "caption": "",
+              "width": 12,
+              "fields": [
+                {
+                  "caption": "Address Search",
+                  "tooltip": null,
+                  "placeholder": null,
+                  "cssClass": null,
+                  "alias": "addressSearch",
+                  "id": "c825db45-0835-41ec-d8d8-05052c19a3df",
+                  "fieldTypeId": "538a430a-db9f-4b58-92fa-2fd2c024dae2",
+                  "prevalueSourceId": "00000000-0000-0000-0000-000000000000",
+                  "dataSourceFieldKey": null,
+                  "containsSensitiveData": false,
+                  "mandatory": false,
+                  "regex": null,
+                  "requiredErrorMessage": null,
+                  "invalidErrorMessage": null,
+                  "condition": {
+                    "id": "00000000-0000-0000-0000-000000000000",
+                    "enabled": false,
+                    "actionType": "Show",
+                    "logicType": "All",
+                    "rules": []
+                  },
+                  "settings": {
+                    "Countries": "GBR",
+                    "Limit": "10",
+                    "Language": "en-gb",
+                    "Origin": "",
+                    "AddressLine1Alias": "addressLine1",
+                    "AddressLine2Alias": "addressLine2",
+                    "TownCityAlias": "townCity",
+                    "CountyAlias": "county",
+                    "PostCodeAlias": "postCode",
+                    "CountryAlias": "",
+                    "AddressLine3Alias": ""
+                  },
+                  "preValues": []
+                },
+                {
+                  "caption": "Address Line 1",
+                  "tooltip": null,
+                  "placeholder": null,
+                  "cssClass": null,
+                  "alias": "addressLine1",
+                  "id": "72b10b54-7227-41ca-fe9c-2ada41f02ff8",
+                  "fieldTypeId": "3f92e01b-29e2-4a30-bf33-9df5580ed52c",
+                  "prevalueSourceId": "00000000-0000-0000-0000-000000000000",
+                  "dataSourceFieldKey": null,
+                  "containsSensitiveData": false,
+                  "mandatory": false,
+                  "regex": null,
+                  "requiredErrorMessage": null,
+                  "invalidErrorMessage": null,
+                  "condition": {
+                    "id": "00000000-0000-0000-0000-000000000000",
+                    "enabled": false,
+                    "actionType": "Show",
+                    "logicType": "All",
+                    "rules": []
+                  },
+                  "settings": {
+                    "DefaultValue": "",
+                    "Placeholder": ""
+                  },
+                  "preValues": []
+                },
+                {
+                  "caption": "Address Line 2",
+                  "tooltip": null,
+                  "placeholder": null,
+                  "cssClass": null,
+                  "alias": "addressLine2",
+                  "id": "f1c58004-f0d5-42e6-e416-ea7957faf46c",
+                  "fieldTypeId": "3f92e01b-29e2-4a30-bf33-9df5580ed52c",
+                  "prevalueSourceId": "00000000-0000-0000-0000-000000000000",
+                  "dataSourceFieldKey": null,
+                  "containsSensitiveData": false,
+                  "mandatory": false,
+                  "regex": null,
+                  "requiredErrorMessage": null,
+                  "invalidErrorMessage": null,
+                  "condition": {
+                    "id": "00000000-0000-0000-0000-000000000000",
+                    "enabled": false,
+                    "actionType": "Show",
+                    "logicType": "All",
+                    "rules": []
+                  },
+                  "settings": {
+                    "DefaultValue": "",
+                    "Placeholder": ""
+                  },
+                  "preValues": []
+                },
+                {
+                  "caption": "Town / City",
+                  "tooltip": null,
+                  "placeholder": null,
+                  "cssClass": null,
+                  "alias": "townCity",
+                  "id": "48964594-c153-4c0d-bc4e-57de56a72a65",
+                  "fieldTypeId": "3f92e01b-29e2-4a30-bf33-9df5580ed52c",
+                  "prevalueSourceId": "00000000-0000-0000-0000-000000000000",
+                  "dataSourceFieldKey": null,
+                  "containsSensitiveData": false,
+                  "mandatory": false,
+                  "regex": null,
+                  "requiredErrorMessage": null,
+                  "invalidErrorMessage": null,
+                  "condition": {
+                    "id": "00000000-0000-0000-0000-000000000000",
+                    "enabled": false,
+                    "actionType": "Show",
+                    "logicType": "All",
+                    "rules": []
+                  },
+                  "settings": {
+                    "DefaultValue": "",
+                    "Placeholder": ""
+                  },
+                  "preValues": []
+                },
+                {
+                  "caption": "County",
+                  "tooltip": null,
+                  "placeholder": null,
+                  "cssClass": null,
+                  "alias": "county",
+                  "id": "701cb790-1e33-4b36-a43c-dd20c53a8757",
+                  "fieldTypeId": "3f92e01b-29e2-4a30-bf33-9df5580ed52c",
+                  "prevalueSourceId": "00000000-0000-0000-0000-000000000000",
+                  "dataSourceFieldKey": null,
+                  "containsSensitiveData": false,
+                  "mandatory": false,
+                  "regex": null,
+                  "requiredErrorMessage": null,
+                  "invalidErrorMessage": null,
+                  "condition": {
+                    "id": "00000000-0000-0000-0000-000000000000",
+                    "enabled": false,
+                    "actionType": "Show",
+                    "logicType": "All",
+                    "rules": []
+                  },
+                  "settings": {
+                    "DefaultValue": "",
+                    "Placeholder": ""
+                  },
+                  "preValues": []
+                },
+                {
+                  "caption": "Post Code",
+                  "tooltip": null,
+                  "placeholder": null,
+                  "cssClass": null,
+                  "alias": "postCode",
+                  "id": "c61faf15-d7fe-4e4d-ba0a-26a2910c9e1e",
+                  "fieldTypeId": "3f92e01b-29e2-4a30-bf33-9df5580ed52c",
+                  "prevalueSourceId": "00000000-0000-0000-0000-000000000000",
+                  "dataSourceFieldKey": null,
+                  "containsSensitiveData": false,
+                  "mandatory": false,
+                  "regex": null,
+                  "requiredErrorMessage": null,
+                  "invalidErrorMessage": null,
+                  "condition": {
+                    "id": "00000000-0000-0000-0000-000000000000",
+                    "enabled": false,
+                    "actionType": "Show",
+                    "logicType": "All",
+                    "rules": []
+                  },
+                  "settings": {
+                    "DefaultValue": "",
+                    "Placeholder": ""
+                  },
+                  "preValues": []
+                }
+              ]
+            }
+          ],
+          "condition": null
+        }
+      ],
+      "caption": "Contact Us",
+      "sortOrder": 0,
+      "id": "00000000-0000-0000-0000-000000000000",
+      "form": "00000000-0000-0000-0000-000000000000"
+    }
+  ],
+  "id": "dd78750a-4e0d-4d85-8e81-55195b7a1679",
+  "fieldIndicationType": "MarkMandatoryFields",
+  "indicator": "*",
+  "showValidationSummary": false,
+  "hideFieldValidation": false,
+  "requiredErrorMessage": "Please provide a value for {0}",
+  "invalidErrorMessage": "Please provide a valid value for {0}",
+  "messageOnSubmit": "Thank you",
+  "goToPageOnSubmit": 0,
+  "xPathOnSubmit": null,
+  "manualApproval": false,
+  "storeRecordsLocally": true,
+  "cssClass": null,
+  "disableDefaultStylesheet": false,
+  "useClientDependency": false,
+  "workflows": [],
+  "datasource": null,
+  "submitLabel": "Submit",
+  "nextLabel": "Next",
+  "prevLabel": "Prev"
+}
