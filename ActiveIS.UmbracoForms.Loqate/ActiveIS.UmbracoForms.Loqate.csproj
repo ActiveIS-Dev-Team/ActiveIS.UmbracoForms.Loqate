@@ -60,7 +60,9 @@
   <ItemGroup>
     <Compile Include="AppSettingsManager.cs" />
     <Compile Include="Fields\LoqateField.cs" />
+    <Compile Include="LoqateFieldViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Helpers\GetFormHelper.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
@@ -76,5 +78,6 @@
     <Content Include="App_Plugins\UmbracoForms\Backoffice\Common\FieldTypes\loqate.html" />
     <Content Include="App_Plugins\UmbracoForms\Images\loqate.png" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
