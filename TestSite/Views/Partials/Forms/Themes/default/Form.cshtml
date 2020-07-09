@@ -1,4 +1,5 @@
 @inherits WebViewPage<Umbraco.Forms.Web.Models.FormViewModel>
+@using ActiveIS.UmbracoForms.Loqate
 @using Umbraco.Forms.Core.Enums
 @using Umbraco.Forms.Mvc
 @using Umbraco.Forms.Mvc.Models
@@ -27,7 +28,6 @@
     {
         @Html.ValidationSummary(false)
     }
-
 
     @foreach (FieldsetViewModel fs in Model.CurrentPage.Fieldsets)
     {
@@ -65,16 +65,25 @@
                                     <span class="umbraco-forms-tooltip help-block">@f.ToolTip</span>
                                 }
 
-                                <div class="umbraco-forms-field-wrapper">
+                            <div class="umbraco-forms-field-wrapper">
 
+                                @if (f.FieldTypeName == "Loqate")
+                                {
+                                    var fm = new LoqateFieldViewModel();
+                                    fm.FormId = Model.FormId;
+                                    @Html.Partial(FormThemeResolver.GetFieldView(Model, f), fm)
+                                }
+                                else
+                                {
                                     @Html.Partial(FormThemeResolver.GetFieldView(Model, f), f)
+                                }
 
-                                    @if (Model.ShowFieldValidaton)
-                                    {
-                                        @Html.ValidationMessage(f.Id)
-                                    }
+                                @if (Model.ShowFieldValidaton)
+                                {
+                                    @Html.ValidationMessage(f.Id)
+                                }
 
-                                </div>
+                            </div>
 
                             </div>
                         }
