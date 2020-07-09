@@ -22,6 +22,9 @@ This is tested with **Umbraco V8.6.1** and **Umbraco Forms 8.4.1**
 You will need to add the following key to your Web.Config:
 
     <add key="LoqateKey" value="YOUR SECRET KEY" />
+    
+For each FieldType to be used with this plugin, @Model.Alias needs adding to the FieldType class.
+The views can be found in /Views/Partials/Forms/Themes/[YOURTHEME]/
 
 ### Contribution guidelines
 
