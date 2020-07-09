@@ -40,14 +40,14 @@
                     "Countries": "GBR",
                     "Limit": "10",
                     "Language": "en-gb",
-                    "Origin": "",
+                    "Origin": "GB",
                     "AddressLine1Alias": "addressLine1",
                     "AddressLine2Alias": "addressLine2",
+                    "AddressLine3Alias": "",
                     "TownCityAlias": "townCity",
                     "CountyAlias": "county",
                     "PostCodeAlias": "postCode",
-                    "CountryAlias": "",
-                    "AddressLine3Alias": ""
+                    "CountryAlias": ""
                   },
                   "preValues": []
                 },

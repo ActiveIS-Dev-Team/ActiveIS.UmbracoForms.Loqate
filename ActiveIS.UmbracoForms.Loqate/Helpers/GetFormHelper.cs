@@ -17,7 +17,7 @@ namespace ActiveIS.UmbracoForms.Loqate.Helpers
             return form;
         }
 
-        public static List<Field> GetAllFormFields(Guid id)
+        public static IEnumerable<Field> GetAllFormFields(Guid id)
         {
             var formService = Current.Factory.GetInstance<IFormStorage>();
             var form = formService.GetForm(id);

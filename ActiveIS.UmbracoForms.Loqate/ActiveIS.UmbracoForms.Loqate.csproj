@@ -66,8 +66,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
-    <None Include="Views\Partials\Forms\Fieldtypes\FieldType.Loqate.cshtml" />
-    <None Include="Views\Partials\Forms\Themes\default\Fieldtypes\FieldType.Loqate.cshtml" />
+    <Content Include="Views\Partials\Forms\Fieldtypes\FieldType.Loqate.cshtml" />
+    <Content Include="Views\Partials\Forms\Themes\default\Fieldtypes\FieldType.Loqate.cshtml" />
+    <Content Include="Views\Partials\Forms\Themes\default\Form.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="UmbracoForms.Core">

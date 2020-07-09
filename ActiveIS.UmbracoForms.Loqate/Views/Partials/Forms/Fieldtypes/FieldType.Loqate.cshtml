@@ -1,6 +1,10 @@
-﻿@using UmbracoForms.Loqate
+﻿@using ActiveIS.UmbracoForms.Loqate
+@using ActiveIS.UmbracoForms.Loqate.Helpers
 @model Umbraco.Forms.Mvc.Models.FieldViewModel
 @{
+    Guid formId = ViewBag.FormId;
+    var allFormFields = FormHelper.GetAllFormFields(formId).ToList();
+
     var loqateKey = AppSettingsManager.GetLoqateKey();
     var countries = string.Empty;
     var countriesSetting = Model.AdditionalSettings.FirstOrDefault(x => x.Key == "Countries");
@@ -34,49 +38,56 @@
     var addressLine1AliasSetting = Model.AdditionalSettings.FirstOrDefault(x => x.Key == "AddressLine1Alias");
     if (addressLine1AliasSetting.Value != "")
     {
-        addressLine1Alias = addressLine1AliasSetting.Value;
+        var addressLine1Id = allFormFields.FirstOrDefault(x => x.Alias == addressLine1AliasSetting.Value)?.Id;
+        addressLine1Alias = addressLine1Id.ToString();
     }
 
     var addressLine2Alias = string.Empty;
     var addressLine2AliasSetting = Model.AdditionalSettings.FirstOrDefault(x => x.Key == "AddressLine2Alias");
     if (addressLine2AliasSetting.Value != "")
     {
-        addressLine2Alias = addressLine2AliasSetting.Value;
+        var addressLine2Id = allFormFields.FirstOrDefault(x => x.Alias == addressLine2AliasSetting.Value)?.Id;
+        addressLine2Alias = addressLine2Id.ToString();
     }
 
     var addressLine3Alias = string.Empty;
     var addressLine3AliasSetting = Model.AdditionalSettings.FirstOrDefault(x => x.Key == "AddressLine3Alias");
     if (addressLine3AliasSetting.Value != "")
     {
-        addressLine2Alias = addressLine2AliasSetting.Value;
+        var addressLine3Id = allFormFields.FirstOrDefault(x => x.Alias == addressLine3AliasSetting.Value)?.Id;
+        addressLine3Alias = addressLine3Id.ToString();
     }
 
     var townCityAlias = string.Empty;
     var townCityAliasSetting = Model.AdditionalSettings.FirstOrDefault(x => x.Key == "TownCityAlias");
     if (townCityAliasSetting.Value != "")
     {
-        townCityAlias = townCityAliasSetting.Value;
+        var townCityId = allFormFields.FirstOrDefault(x => x.Alias == townCityAliasSetting.Value)?.Id;
+        townCityAlias = townCityId.ToString();
     }
 
     var countyAlias = string.Empty;
     var countyAliasSetting = Model.AdditionalSettings.FirstOrDefault(x => x.Key == "CountyAlias");
     if (countyAliasSetting.Value != "")
     {
-        countyAlias = countyAliasSetting.Value;
+        var countyId = allFormFields.FirstOrDefault(x => x.Alias == countyAliasSetting.Value)?.Id;
+        countyAlias = countyId.ToString();
     }
 
     var postCodeAlias = string.Empty;
     var postCodeAliasSetting = Model.AdditionalSettings.FirstOrDefault(x => x.Key == "PostCodeAlias");
     if (postCodeAliasSetting.Value != "")
     {
-        postCodeAlias = postCodeAliasSetting.Value;
+        var postCodeId = allFormFields.FirstOrDefault(x => x.Alias == postCodeAliasSetting.Value)?.Id;
+        postCodeAlias = postCodeId.ToString();
     }
 
     var countryAlias = string.Empty;
     var countryAliasSetting = Model.AdditionalSettings.FirstOrDefault(x => x.Key == "CountryAlias");
     if (countryAliasSetting.Value != "")
     {
-        countryAlias = countryAliasSetting.Value;
+        var countryId = allFormFields.FirstOrDefault(x => x.Alias == countryAliasSetting.Value)?.Id;
+        countryAlias = countryId.ToString();
     }
 
     if (!string.IsNullOrEmpty(loqateKey))
@@ -249,37 +260,37 @@
                         var res = response.Items[0];
                         @if (!string.IsNullOrEmpty(addressLine1Alias))
                         {
-                            <text>$('.@addressLine1Alias').val(res.Line1);</text>
+                            <text>$('#@addressLine1Alias').val(res.Line1);</text>
                         }
 
                         @if (!string.IsNullOrEmpty(addressLine2Alias))
                         {
-                            <text>$('.@addressLine2Alias').val(res.Line2);</text>
+                            <text>$('#@addressLine2Alias').val(res.Line2);</text>
                         }
 
                         @if (!string.IsNullOrEmpty(addressLine3Alias))
                         {
-                            <text>$('.@addressLine3Alias').val(res.Line3);</text>
+                            <text>$('#@addressLine3Alias').val(res.Line3);</text>
                         }
 
                         @if (!string.IsNullOrEmpty(townCityAlias))
                         {
-                            <text>$('.@townCityAlias').val(res.City);</text>
+                            <text>$('#@townCityAlias').val(res.City);</text>
                         }
 
                         @if (!string.IsNullOrEmpty(countyAlias))
                         {
-                            <text>$('.@countyAlias').val(res.AdminAreaName);</text>
+                            <text>$('#@countyAlias').val(res.AdminAreaName);</text>
                         }
 
                         @if (!string.IsNullOrEmpty(postCodeAlias))
                         {
-                            <text>$('.@postCodeAlias').val(res.PostalCode);</text>
+                            <text>$('#@postCodeAlias').val(res.PostalCode);</text>
                         }
 
                         @if (!string.IsNullOrEmpty(countryAlias))
                         {
-                            <text>$('.@countryAlias').val(res.AdminAreaName);</text>
+                            <text>$('#@countryAlias').val(res.AdminAreaName);</text>
                         }
                     }
                 }
