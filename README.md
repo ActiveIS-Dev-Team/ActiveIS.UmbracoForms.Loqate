@@ -22,10 +22,23 @@ This is tested with **Umbraco V8.6.1** and **Umbraco Forms 8.4.1**
 You will need to add the following key to your Web.Config:
 
     <add key="LoqateKey" value="YOUR SECRET KEY" />
-    
-For each FieldType to be used with this plugin, `@Model.Alias` needs adding to the FieldType class.
 
-The views can be found in `/Views/Partials/Forms/Themes/[YOURTHEME]/`
+The plugin includes a replacement for `Form.cshtml`, do not overwrite your copy if you have made modifications, instead change as below:
+
+Change this line:
+
+    @Html.Partial(FormThemeResolver.GetFieldView(Model, f), f)
+
+To this:
+
+    @if (f.FieldTypeName == "Loqate")
+    {
+        @Html.Partial(FormThemeResolver.GetFieldView(Model, f), f, new ViewDataDictionary{ { "FormId", Model.FormId }})
+    }
+    else
+    {
+        @Html.Partial(FormThemeResolver.GetFieldView(Model, f), f)
+    }
 
 ### Contribution guidelines
 

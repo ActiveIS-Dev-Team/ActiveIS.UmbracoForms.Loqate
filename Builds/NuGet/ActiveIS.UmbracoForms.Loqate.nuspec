@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>ActiveIS.UmbracoForms.Loqate</id>
-    <version>1.0.0</version>
+    <version>2.0.2</version>
     <title>ActiveIS.UmbracoForms.Loqate</title>
     <authors>ActiveIS</authors>
     <owners>ActiveIS</owners>
@@ -11,7 +11,7 @@
     <projectUrl>https://github.com/ActiveIS/ActiveIS.UmbracoForms.Loqate</projectUrl>
     <icon>loqate.png</icon>
     <description>A loqate address verification plugin for Umbraco Forms</description>
-    <releaseNotes>Initial Release</releaseNotes>
+    <releaseNotes>Fixed backoffice icon</releaseNotes>
     <copyright>Copyright 2020</copyright>
     <tags>umbraco umbraco-cms umbraco-forms loqate</tags>
 	<dependencies>
@@ -24,8 +24,10 @@
   </metadata>
     <files>
       <file src="..\..\ActiveIS.UmbracoForms.Loqate\App_Plugins\UmbracoForms\Images\loqate.png"/>
+	  <file src="..\..\ActiveIS.UmbracoForms.Loqate\App_Plugins\UmbracoForms\Images\loqate.png" target="content\App_Plugins\UmbracoForms\Images\"/>
 	  <file src="..\..\ActiveIS.UmbracoForms.Loqate\bin\Release\ActiveIS.UmbracoForms.Loqate.dll" target="lib\net472" />
 	  <file src="..\..\ActiveIS.UmbracoForms.Loqate\Views\Partials\Forms\Fieldtypes\FieldType.Loqate.cshtml" target="content\Views\Partials\Forms\Fieldtypes\" />
+	  <file src="..\..\ActiveIS.UmbracoForms.Loqate\Views\Partials\Forms\Themes\default\Form.cshtml" target="content\Views\Partials\Forms\Themes\default\" />
 	  <file src="..\..\ActiveIS.UmbracoForms.Loqate\Views\Partials\Forms\Themes\default\Fieldtypes\FieldType.Loqate.cshtml" target="content\Views\Partials\Forms\Themes\default\Fieldtypes\" />
 	  <file src="..\..\ActiveIS.UmbracoForms.Loqate\App_Plugins\UmbracoForms\Backoffice\Common\FieldTypes\loqate.html" target="content\App_Plugins\UmbracoForms\Backoffice\Common\FieldTypes\" />
     </files>
